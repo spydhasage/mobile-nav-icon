@@ -1,0 +1,65 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ @media (max-width: 767px) {
+  
+  .menu-item .menu-icon {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-right: 5px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .menu-item .menu-icon:hover {
+    background-color: #555;
+  }
+
+  .menu-item .menu-icon i {
+    vertical-align: middle;
+  }
+
+}
+
+
+ /* Add the CSS selector for your mobile menu icon */
+.mobile-menu-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url('your-image-url');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  
+
+ /* Show menu icons only on mobile devices */
+ @media only screen and (max-width: 767px) {
+    .menu-item-icon {
+      display: inline-block;
+      width: 20px;
+      text-align: center;
+      vertical-align: middle;
+      margin-right: 5px;
+      font-size: 16px;
+    }
+  }
+
+  /* Hide menu icons on tablet and desktop devices */
+@media only screen and (min-width: 768px) {
+    .menu-item-icon {
+      display: none;
+    }
+  }
+  
